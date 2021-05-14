@@ -254,7 +254,7 @@ class Landing extends React.Component {
                   <img
                     alt="..."
                     className="img-fluid floating"
-                    src={require("../../assets/img/theme/promo-1.png")}
+                    src={require("../../assets/img/theme/promo-1.png").default}
                   />
                 </Col>
                 <Col className="order-md-1" md="6">
@@ -331,7 +331,7 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={require("../../assets/img/theme/img-1-1200x1000.jpg")}
+                      src={require("../../assets/img/theme/img-1-1200x1000.jpg").default}
                       top
                     />
                     <blockquote className="card-blockquote">
@@ -403,7 +403,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("../../assets/img/ill/ill-2.svg")}
+                      src={require("../../assets/img/ill/ill-2.svg").default}
                     />
                   </div>
                 </Col>
@@ -517,7 +517,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("../../assets/img/theme/team-1-800x800.jpg")}
+                      src={require("../../assets/img/theme/team-1-800x800.jpg").default}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
@@ -559,7 +559,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("../../assets/img/theme/team-2-800x800.jpg")}
+                      src={require("../../assets/img/theme/team-2-800x800.jpg").default}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
@@ -603,7 +603,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("../../assets/img/theme/team-3-800x800.jpg")}
+                      src={require("../../assets/img/theme/team-3-800x800.jpg").default}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
@@ -645,7 +645,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("../../assets/img/theme/team-4-800x800.jpg")}
+                      src={require("../../assets/img/theme/team-4-800x800.jpg").default}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">

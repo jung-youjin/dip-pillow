@@ -28,15 +28,16 @@ import Login from "./views/examples/Login.js";
 import Profile from "./views/examples/Profile.js";
 import Register from "./views/examples/Register.js";
 import Sample from "./views/Sample.js";
+import Main from "./views/Main.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact render={props => <Sample {...props} />} />
+      <Route path="/" exact render={props => <Main {...props} />} />
       <Route
-        path="/sample"
+        path="/pill-photoshoot"
         exact
-        render={props => <Sample {...props} />}
+        render={props => <Landing {...props} />}
       />
       <Redirect to="/" />
     </Switch>

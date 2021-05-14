@@ -47,12 +47,18 @@ class Hero extends React.Component {
                     <img
                       alt="..."
                       className="img-fluid"
-                      src={require("../../assets/img/brand/argon-react-white.png")}
-                      style={{ width: "200px" }}
+                      src={require("../../assets/img/dip-pillow/hand-phone.png").default}
+                      style={{ width: "100px" }}
                     />
+                    <img
+                      alt="..."
+                      className="img-fluid"
+                      src={require('../../assets/img/dip-pillow/pill-illustration2.png').default}
+                      style={{ width: "100px" }}
+                    />
+                    
                     <p className="lead text-white">
-                      A beautiful Design System for Bootstrap 4. It's Free and
-                      Open Source.
+                      "이 알약 함께 복용해도 괜찮은 걸까?" 고민하지 말고 촬영해서 알아내보자!
                     </p>
                     <div className="btn-wrapper mt-5">
                       <Button
@@ -90,7 +96,7 @@ class Hero extends React.Component {
                         alt="..."
                         className="ml-1"
                         style={{ height: "28px" }}
-                        src={require("../../assets/img/brand/creativetim-white-slim.png")}
+                        src={require("../../assets/img/brand/creativetim-white-slim.png").default}
                       />
                     </div>
                   </Col>
