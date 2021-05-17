@@ -29,15 +29,18 @@ import Profile from "./views/examples/Profile.js";
 import Register from "./views/examples/Register.js";
 import Sample from "./views/Sample.js";
 import Main from "./views/Main.js";
+import PhotoShoot from "./views/PhotoShoot.js"
+import AxiosTest from "./views/AxiosTest";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact render={props => <Main {...props} />} />
+      <Route path="/axios" exact render={props => <AxiosTest {...props} />} />
       <Route
         path="/pill-photoshoot"
         exact
-        render={props => <Landing {...props} />}
+        render={props => <PhotoShoot {...props} />}
       />
       <Redirect to="/" />
     </Switch>
