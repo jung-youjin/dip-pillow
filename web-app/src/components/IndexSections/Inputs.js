@@ -44,6 +44,13 @@ class Inputs extends React.Component {
                 Form controls
               </small>
             </div>
+            
+            <div>
+              <input 
+              type="file"
+              accept="image/*"
+              capture="environment"></input>
+            </div>
             <Row>
               <Col lg="4" sm="6">
                 <FormGroup>

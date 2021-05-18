@@ -44,6 +44,18 @@ class Hero extends React.Component {
               <div className="col px-0">
                 <Row className="align-items-center justify-content-center">
                   <Col className="text-center" lg="6">
+                  <div>
+                    <span>
+                    <img
+                      alt="..."
+                      className="img-fluid"
+                      src={require('../../assets/img/dip-pillow/dip-logo.png').default}
+                      style={{ width: "50%" }}
+                    />
+                    </span>
+                  </div>
+                  <br></br>
+
                     <img
                       alt="..."
                       className="img-fluid"
@@ -68,9 +80,9 @@ class Hero extends React.Component {
                         size="lg"
                       >
                         <span className="btn-inner--icon mr-1">
-                          <i className="ni ni-cloud-download-95" />
+                          <i className="fa fa-github" />
                         </span>
-                        <span className="btn-inner--text">Download React</span>
+                        <span className="btn-inner--text">사진 촬영하기</span>
                       </Button>{" "}
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
@@ -80,23 +92,23 @@ class Hero extends React.Component {
                         target="_blank"
                       >
                         <span className="btn-inner--icon mr-1">
-                          <i className="fa fa-github" />
+                          <i className="ni ni-cloud-download-95" />
                         </span>
                         <span className="btn-inner--text">
-                          <span className="text-warning mr-1">Star us</span>
-                          on Github
+                          <span className="text-warning mr-1">앨범</span>
+                          사진 불러오기
                         </span>
                       </Button>
                     </div>
                     <div className="mt-5">
                       <small className="text-white font-weight-bold mb-0 mr-2">
-                        *proudly coded by
+                        *presented to you by
                       </small>
                       <img
                         alt="..."
                         className="ml-1"
                         style={{ height: "28px" }}
-                        src={require("../../assets/img/brand/creativetim-white-slim.png").default}
+                        src={require("../../assets/img/dip-pillow/dip-logo-long.png").default}
                       />
                     </div>
                   </Col>

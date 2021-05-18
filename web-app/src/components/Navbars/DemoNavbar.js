@@ -75,7 +75,7 @@ class DemoNavbar extends React.Component {
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img
                   alt="..."
-                  src={require("../../assets/img/brand/argon-react-white.png").default}
+                  src={require("../../assets/img/dip-pillow/dip-logo-long.png").default}
                 />
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
@@ -94,7 +94,8 @@ class DemoNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("../../assets/img/brand/argon-react.png").default}
+                          src={require("../../assets/img/dip-pillow/dip-color.png").default}
+                          object-fit="cover"
                         />
                       </Link>
                     </Col>

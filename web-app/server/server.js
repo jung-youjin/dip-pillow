@@ -13,12 +13,12 @@ app.get('/', function(req,res) {
     console.log('axios');
 });
 
-// app.get('/api/products', (req, res) => {
-//     db.query("SELECT * FROM mall_test", (err, data) => {
-//         if(!err) res.send({ products : data });
-//         else res.send(err);
-//     })
-// })
+app.get('/dbTest', (req, res) => {
+    db.query("SELECT * FROM pill_table", (err, data) => {
+        if(!err) res.send({ pills : data });
+        else res.send(err);
+    })
+})
 
 app.listen(PORT, () => {
     console.log(`Server On : http://localhost:${PORT}/`);
