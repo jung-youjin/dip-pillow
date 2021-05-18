@@ -46,7 +46,10 @@ class Inputs extends React.Component {
             </div>
             
             <div>
-              <input type="file" accept="image/*" capture="environment"></input>
+              <input 
+              type="file"
+              accept="image/*"
+              capture="environment"></input>
             </div>
             <Row>
               <Col lg="4" sm="6">
