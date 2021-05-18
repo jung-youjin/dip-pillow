@@ -43,13 +43,33 @@ import CardsFooter from "../components/Footers/CardsFooter.js";
 // index page sections
 import Download from "../components/IndexSections/Download.js";
 
-class PhotoShoot extends React.Component {
+import axios from 'axios';
+
+class AxiosTest extends React.Component {
+
   state = {};
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      dbTest: [],
+    };
+  };
+
   componentDidMount() {
+    this._getAxios();
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
-  }
+  };
+
+  _getAxios = async() => {
+    const res = await axios.get('/dbTest');
+    this.setState({axios : res.data.dbTest});
+    // console.log(this.state.axios);
+    console.log(this.state.dbTest);
+  };
+
   render() {
     return (
       <>
@@ -73,16 +93,15 @@ class PhotoShoot extends React.Component {
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
+                      <h3> {this.state.axios} - get DB data</h3>
                       <h1 className="display-3 text-white">
-                        사진으로 알약 자동 판별{" "}
-                        {/* <span>completed with examples</span> */}
+                        A beautiful Design System{" "}
+                        <span>completed with examples</span>
                       </h1>
                       <p className="lead text-white">
-                        갖고 있는 알약의 이름, 종류가 궁금할때 
-                        
-                      </p>
-                      <p className="lead text-white">
-                      <span>갖고 있는 알약들을 함께 복용해도 괜찮은지 궁금할때</span>
+                        The design system comes with four pre-built pages to
+                        help you get started faster. You can change the text and
+                        images and you're good to go.
                       </p>
                       <div className="btn-wrapper">
                         <Button
@@ -93,7 +112,7 @@ class PhotoShoot extends React.Component {
                           <span className="btn-inner--icon mr-1">
                             <i className="fa fa-code" />
                           </span>
-                          <span className="btn-inner--text">지금 바로 사진 촬영하기</span>
+                          <span className="btn-inner--text">Components</span>
                         </Button>
                         <Button
                           className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
@@ -104,7 +123,7 @@ class PhotoShoot extends React.Component {
                             <i className="ni ni-cloud-download-95" />
                           </span>
                           <span className="btn-inner--text">
-                            앨범에서 사진 불러오기
+                            Download React
                           </span>
                         </Button>
                       </div>
@@ -864,4 +883,4 @@ class PhotoShoot extends React.Component {
   }
 }
 
-export default PhotoShoot;
+export default Result;
