@@ -36,6 +36,11 @@
     - 서비스 제공용 알약 정보 수집
 - 2021.05.24 OCR 툴 수정 (Tesseract -> EasyOCR)
 - **2021.05.26 중간 발표**
+- 2021.05.27
+    - 서비스 제공 대상, 방식 및 기능 수정 (교수님 feedback 반영)
+    - OCR 기능 테스트
+    - MATLAB 전처리용 간단 code 작성
+    - octave 연동
 
 
 ## 사용된 영상 처리 기법 및 기술
@@ -49,3 +54,9 @@
     - Gaussian Filtering
     - Sobel Filtering
     - Magnitude Modification
+    - Histogram Equalization
+    - Contrast Adjustment
+ 
+ ### 서비스 제공을 위해 사용된 기술
+ - Web Crawler
+    - Selenium
