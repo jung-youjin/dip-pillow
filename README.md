@@ -1,4 +1,4 @@
-# 딥러닝 기반 알약 자동분류 및 약물 오남용 방지 정보 제공 시스템
+# 딥러닝 기반 알약 자동 분류 및 정보 제공 시스템
 
 ### 2021-1 Digital Image Processing 최종 설계 프로젝트
 
@@ -6,10 +6,11 @@
 ---
 
 
-# Deep-learning based pill automatized classification and incorrect dosage prevention system
+# Deep-learning based pill automatized classification and informative system
 
 ### 2021-1 Digital Image Processing Final Design Project
 
+---
 ---
 
 ## 프로젝트 진행 타임라인 
