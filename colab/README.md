@@ -1,0 +1,4 @@
+- YOLOv4 (supervised)
+- EasyOCR
+- Octave (integrate MATLAB file)
+- Selenium (to be updated)
