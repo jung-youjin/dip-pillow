@@ -46,6 +46,9 @@ import Icons from "../components/IndexSections/Icons.js";
 import Login from "../components/IndexSections/Login.js";
 import Download from "../components/IndexSections/Download.js";
 
+import ListDocuments from "../components/ListDocuments.js";
+import SelectSource from "../components/SelectSource/index.js";
+
 class Main extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;

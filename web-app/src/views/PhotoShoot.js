@@ -43,6 +43,73 @@ import CardsFooter from "../components/Footers/CardsFooter.js";
 // index page sections
 import Download from "../components/IndexSections/Download.js";
 
+// Array of API discovery doc URLs for APIs
+const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'];
+
+// Authorization scopes required by the API; multiple scopes can be
+// included, separated by spaces.
+const SCOPES = 'https://www.googleapis.com/auth/drive.metadata.readonly';
+
+const initClient = () => {
+  setIsLoadingGoogleDriveApi(true);
+  gapi.client
+    .init({
+      apiKey: API_KEY,
+      clientId: CLIENT_ID,
+      discoveryDocs: DISCOVERY_DOCS,
+      scope: SCOPES,
+    })
+    .then(
+      function () {
+        // Listen for sign-in state changes.
+        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+        // Handle the initial sign-in state.
+        updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+      },
+      function (error) {}
+    );
+};
+
+const updateSigninStatus = (isSignedIn) => {
+  if (isSignedIn) {
+    // Set the signed in user
+    setSignedInUser(gapi.auth2.getAuthInstance().currentUser.je.Qt);
+    setIsLoadingGoogleDriveApi(false);
+    // list files if user is authenticated
+    listFiles();
+  } else {
+    // prompt user to sign in
+    handleAuthClick();
+  }
+};
+
+ /**
+ * List files.
+ */
+const listFiles = (searchTerm = null) => {
+  setIsFetchingGoogleDriveFiles(true);
+  gapi.client.drive.files
+    .list({
+      pageSize: 10,
+      fields: 'nextPageToken, files(id, name, mimeType, modifiedTime)',
+      q: searchTerm,
+    })
+    .then(function (response) {
+      setIsFetchingGoogleDriveFiles(false);
+      setListDocumentsVisibility(true);
+      const res = JSON.parse(response.body);
+      setDocuments(res.files);
+    });
+};
+
+/**
+ *  Sign in the user upon button click.
+ */
+const handleAuthClick = (event) => {
+  gapi.auth2.getAuthInstance().signIn();
+};
+
 class PhotoShoot extends React.Component {
   state = {};
   componentDidMount() {
@@ -106,6 +173,10 @@ class PhotoShoot extends React.Component {
                           <span className="btn-inner--text">
                             앨범에서 사진 불러오기
                           </span>
+                          onClick={() => handleClientLoad()}
+                          const handleClientLoad = () => {
+                            gapi.load('client:auth2', initClient);
+                          };
                         </Button>
                       </div>
                     </Col>
