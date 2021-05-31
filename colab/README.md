@@ -1,0 +1,6 @@
+- YOLOv4 (supervised)
+- ~~Octave (integrate MATLAB file)~~
+- OpenCV for image preprocessing
+  - changed due to image matrix type compatibility between matlab and opencv(ocr)
+- EasyOCR
+- Selenium 
