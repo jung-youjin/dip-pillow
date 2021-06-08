@@ -42,7 +42,13 @@
     - OCR 기능 테스트
     - MATLAB 전처리용 간단 code 작성
     - octave 연동
-
+- 2021.05.28
+    - selenium 연동
+- 2021.05.30
+    - octave 제거 -> opencv 영상처리로 변경
+- 2021.06.04
+    - 알약 1개만 촬영시 상세하고 정확한 검색가능한 기능 추가
+- **2021.06.09 최종 발표**
 
 ## 사용된 영상 처리 기법 및 기술
 
@@ -53,11 +59,53 @@
     - EasyOCR
 - Image Preprocessing - Image Enhancement
     - Gaussian Filtering
-    - Sobel Filtering
+    - Color Scale Conversion
     - Magnitude Modification
-    - Histogram Equalization
-    - Contrast Adjustment
+    - Histogram Equalization (Contrast Adjustment)
+    - CLAHE
+ 
  
  ### 서비스 제공을 위해 사용된 기술
  - Web Crawler
     - Selenium
+    
+
+## 프로젝트 구현 결과물 예시
+
+### SECTIONS
+<img src="https://user-images.githubusercontent.com/37402072/121221702-c76cbb80-c8c0-11eb-9936-f845c073172b.png" width="250">
+
+---
+
+### INPUT
+<img src="https://user-images.githubusercontent.com/37402072/121222151-3ea24f80-c8c1-11eb-8562-1003e84c5fcf.jpg" width="300">
+
+---
+
+### CROP & SAVE
+<img src="https://user-images.githubusercontent.com/37402072/121222577-9fca2300-c8c1-11eb-9331-22c5cb578353.png" width="400">
+<img src="https://user-images.githubusercontent.com/37402072/121222282-5ed20e80-c8c1-11eb-9536-97b38b2e6611.png" width="450">
+
+---
+
+### IMAGE PREPROCESSING
+<img src="https://user-images.githubusercontent.com/37402072/121222361-727d7500-c8c1-11eb-8d23-9a2172315407.png" width="450">
+
+---
+
+### TEXT RECOGNITION
+<img src="https://user-images.githubusercontent.com/37402072/121222819-d43ddf00-c8c1-11eb-95db-6a0c22d36166.png" width="250">
+
+---
+
+### INFORMATION RETRIEVAL
+<img src="https://user-images.githubusercontent.com/37402072/121221813-e703e400-c8c0-11eb-8058-35ce7dee9fe9.png" width="450">
+<img src="https://user-images.githubusercontent.com/37402072/121221953-0dc21a80-c8c1-11eb-924c-9c9f4f63b457.png" width="600">
+<img src="https://user-images.githubusercontent.com/37402072/121222003-1c103680-c8c1-11eb-8d40-381aa85c5595.png" width="600">
+
+
+
+
+#### 한계점
+
+프로젝트 결과물 발표 당시, 웹프로젝트로 구현하지 못하고 Google Colab에서 마무리 지은 점이 아쉽다.
