@@ -52,6 +52,7 @@
 
 ## 사용된 영상 처리 기법 및 기술
 
+### 자동 인식을 위해 사용된 기술
 - Object Detection / Segmentation - YOLO
     - YOLOv4
 - Text Recognition - OCR 
@@ -69,6 +70,7 @@
  - Web Crawler
     - Selenium
     
+---
 
 ## 프로젝트 구현 결과물 예시
 
